@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cup of tea</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/global.css">
+    <?php if ($template != 'index' && $template != 'product'): ?>
+        <link rel="stylesheet" href="css/content.css">
+    <?php endif ?>
+</head>
+<body>
+<header>
+    <aside id="pub">
+        <a href="#">Livraison offerte à partir de 65€ d'achat !</a>
+    </aside>
+    <aside id="award">
+        <img class="img-responsive" src="img/ribbon.svg" title="Elu meilleur thé" alt="Elu meilleur thé" width="50" height="50">
+    </aside>
+    <div class="background">
+        <div id="title">
+            <aside id="caddie">
+                <a href="#">42,00€</a>
+            </aside>
+            <a href="index.php"><img class="img-responsive" src="img/logo.png" title="Cup of tea" alt="Cup of tea" width="224" height="65"></a>
+        </div>
+        <nav>
+            <a href="listing.php">Thés</a>
+            <a href="#">Grands crus</a>
+            <a href="#">Accessoires</a>
+            <a href="#">Epicerie</a>
+            <a href="about.php">Notre histoire</a>
+        </nav>
+    </div>
+</header>
+<?php include "templates/$template.phtml" ?>
+<footer>
+    <section class="money">
+        <nav>
+            <div class="twice">
+                <a href="#">Paiement sécurisé</a>
+                <a href="#">Ma livraison offerte</a>
+            </div>
+            <div class="twice">
+                <a href="#">Carte de fidélité</a>
+                <a href="#">Service client</a>
+            </div>
+            <div class="once">
+                <a href="#">Garantie qualité</a>
+            </div>
+        </nav>
+    </section>
+    <div class="background">
+        <section class="discover">
+            <ul>
+                <li><h3>Cup of tea</h3></li>
+                <li><a href="#">Notre histoire</a></li>
+                <li><a href="#">Nos boutiques</a></li>
+                <li><a href="#">Le Thé de A à Z</a></li>
+                <li><a href="#">Espace clients professionnels</a></li>
+                <li><a href="#">Recrutement</a></li>
+                <li><a href="#">Contactez-nous !</a></li>
+                <li><a href="#">L'Ecole du Thé</a></li>
+            </ul>
+            <ul>
+                <li><h3>Commandez en ligne</h3></li>
+                <li><a href="#">Première visite</a></li>
+                <li><a href="#">Aide - FAQ</a></li>
+                <li><a href="#">Service client</a></li>
+                <li><a href="#">Suivre ma commande</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Informations légales</a></li>
+            </ul>
+            <ul>
+                <li><h3>Suivez-nous !</h3></li>
+                <li><a href="#">Notre histoire</a></li>
+                <li><a href="#">Nos boutiques</a></li>
+                <li><a href="#">Le Thé de A à Z</a></li>
+                <li><a href="#">Espace clients professionnels</a></li>
+            </ul>
+        </section>
+        <section class="sign">
+            <p>
+                Cet exercice de <a href="https://3wa.fr/">3W Academy</a> est mis à disposition
+                <a href="https://3wa.fr/">pour l'usage personnel des étudiants.
+                    Pas de rediffusion - Attribution - Pas d'utilisation commerciale - Pas de modification - International</a>.<br>
+                Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="https://3wa.fr/">contact@3wa.fr</a>.
+                Les maquettes ont été réalisées par <a href="https://3wa.fr/">Justine Muller</a>.
+            </p>
+        </section>
+    </div>
+</footer>
+</body>
+</html>

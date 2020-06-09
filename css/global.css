@@ -1,0 +1,301 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    text-align: center;
+    min-width: 300px;
+}
+h1 {
+    color: #879e0f;
+    margin: 0;
+    padding: 40px 0;
+}
+#offer h1 {
+    background-color: #f2f2f2;
+}
+h2 {
+    color: #879e0f;
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    /*right: 100%;
+    transform: translate(100%);*/
+    background-color: white;
+    padding: 0 10px;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+figcaption {
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+.repairFlux {
+    clear: both;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.once {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.twice {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+header {
+    color: white;
+}
+header aside#pub {
+    background-color: #879e0f;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.7rem;
+}
+header aside#caddie {
+    background-color: #96b011;
+    display: inline-block;
+    padding: 15px;
+    border-top-right-radius: 30% 50%;
+    border-bottom-right-radius: 30% 50%;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    box-shadow: 2px 2px 1px #2a2a2a;
+    font-weight: bold;
+    z-index: 1;
+}
+header aside#award {
+    display: none;
+}
+header #title img {
+    margin-top: 70px;
+}
+header .background {
+    background: #96b011 url('../img/bg.jpg') no-repeat top center / cover;
+}
+header nav {
+    padding-top: 30px;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+header nav a {
+    margin: 15px 0;
+}
+header nav a:last-of-type {
+    margin-bottom: 40px;
+}
+main section#offer {
+    display: none;
+}
+main section:not(#offer) {
+    border-top: #f2f2f2 30px solid;
+    padding: 0 20px;
+    color: #626262;
+}
+main section:last-of-type{
+    border-bottom: #f2f2f2 50px solid;
+    padding-bottom: 30px;
+}
+main section article {
+    position: relative;
+    padding-bottom: 60px;
+}
+main section article p {
+    line-height: 1.5;
+    font-size: 1.7rem;
+}
+main section span.price {
+    display: block;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+main section a.see {
+    background-color: #b09067;
+    color: white;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    padding: 15px 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+section#product figure {
+    padding-bottom: 75px;
+}
+footer {
+    font-size: 1.5rem;
+}
+footer section.money {
+    background-color: #879e0f;
+    color: #ced79e;
+    text-transform: uppercase;
+    height: 100px;
+}
+footer section.money a {
+    margin: 8px 0;
+}
+footer section.discover {
+    background-color: #96b011;
+    color: #ced79e;
+    padding: 20px 0;
+}
+footer section.discover h3 {
+    color: white;
+    text-transform: uppercase;
+}
+footer section.discover li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+footer section.sign {
+    background: #96b011 url('../img/bg.jpg') no-repeat top center / cover;
+    color: white;
+    padding: 20px;
+}
+@media all and (min-width: 766px) {
+    header aside#award {
+        display: inline;
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        transform: scale(2);
+    }
+    header aside#caddie::before {
+        content: 'Mon panier :';
+    }
+    header aside#caddie {
+        background: none;
+        position: static;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    header #title {
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: space-between;
+    }
+    header #title img {
+        margin: 20px 10px 10px ;
+    }
+    header #title aside#caddie {
+        margin: 50px 10px 10px ;
+    }
+    header nav {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding-top: 35px;
+        align-items: stretch;
+	}
+    main section#offer {
+        display: block;
+    }
+    main section#offer figure {
+        margin: 0;
+        background-color: #f2f2f2;
+    }
+    main section#offer figure figcaption {
+        font-size: 1.3rem;
+        font-weight: normal;
+        color: #626262;
+    }
+    footer section.money nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding-top: 25px;
+    }
+    footer section.money nav div:nth-of-type(1) {
+        flex: 2;
+    }
+    footer section.money nav div:nth-of-type(2) {
+        flex: 2;
+    }
+    footer section.money nav div:nth-of-type(3) {
+        flex: 1;
+    }
+    footer section.sign {
+        background: none;
+    }
+    footer section.discover {
+        background: none;
+        font-size: 0;
+    }
+    footer .background {
+        background: #96b011 url('../img/bg.jpg') no-repeat top center / cover;
+    }
+    footer section.discover ul {
+        display: inline-block;
+        font-size: 1.6rem;
+        width: calc((100% - 10%) / 3);
+        vertical-align: top;
+    }
+    footer section.discover ul:last-of-type {
+        margin-left: calc(10% / (3 - 1));
+    }
+}
+@media all and (min-width: 1200px) {
+    header #title {
+        justify-content: space-around;
+    }
+    main section {
+        border-top: #f2f2f2 30px solid;
+        border-right: #f2f2f2 100px solid;
+        border-left: #f2f2f2 100px solid;
+    }
+    main section#offer figure {
+        margin-bottom: 0;
+    }
+    main section #tea {
+        font-size: 0;
+        text-align: center;
+    }
+    .once, .twice {
+        width: calc(100% / 3);
+        display: inline-block;
+    }
+    main section.tea figure {
+        margin: 16px 0;
+    }
+    main section #show:not(#show h2) {
+        font-size: 0;
+        text-align: center;
+    }
+    main section.show article {
+        width: calc((100% - 10%) / 3);
+        display: inline-block;
+        padding-bottom: 90px;
+    }
+    main section.show article:not(:first-of-type) {
+        margin-left: calc(10% / (3 - 1));
+    }
+    footer section.money nav {
+        padding-top: 0;
+    }
+    footer section.money nav a {
+        line-height: 90px;
+    }
+}

@@ -1,0 +1,95 @@
+body {
+    text-align: left;
+}
+header, footer {
+    text-align: center;
+}
+h1 {
+    color: black;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+img {
+    margin-top: 30px;
+}
+main #product {
+	text-align: center;
+}
+main section article {
+    padding-bottom: 0;
+}
+nav.concepts {
+    background-color: #eaefcf;
+    text-align: center;
+    padding: 20px 100px;
+    margin-bottom: 30px;
+}
+nav.concepts img {
+    transform: scale(2);
+}
+nav.concepts figcaption {
+    margin-top: 30px;
+}
+section.listing > img {
+    float: left;
+}
+section.listing article {
+    margin-bottom: 150px;
+}
+section.listing article:last-of-type {
+    margin-bottom: 100px;
+}
+section.listing article figure {
+    text-align: center;
+    margin-bottom: 0;
+}
+section.listing article img {
+    margin-top: 0;
+}
+section.listing article p {
+    text-align: center;
+    margin-top: 0;
+}
+@media all and (min-width: 766px) {
+    header aside#award {
+        top: -20px;
+        right: 25px;
+    }
+    article img.left {
+        float: left;
+        margin-right: 30px;
+    }
+    article img.right {
+        float: right;
+        margin-left: 20px;
+    }
+}
+@media all and (min-width: 1200px) {
+    section.listing .article {
+        font-size: 0;
+        text-align: center;
+    }
+    section.listing article {
+        display: inline-block;
+        width: calc(100% / 3);
+    }
+    section.listing article figure {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    nav.concepts {
+        font-size: 0;
+        padding: 20px 40px;
+    }
+    nav.concepts * {
+        font-size: 1.6rem;
+    }
+    nav .concept {
+        display: inline-block;
+        width: calc((100% - 10%) / 3);
+        vertical-align: top;
+    }
+    nav .concept:not(:first-of-type) {
+        margin-left: calc(10% / (3 - 1));
+    }
+}
